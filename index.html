@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -74,7 +75,7 @@
 
     <!-- Main Content -->
 
-    <main class="w-full ">
+    <main class="w-full " id="hero-section" data-aos="fade-up">
         <div
             class="container flex flex-col md:flex-row lg:h-[calc(100vh-80px)]  py-20 lg:py-0  items-center justify-center">
             <div class=" flex  flex-col gap-7 lg:w-1/2 w-full text-center md:text-start items-center md:items-start   ">
@@ -105,14 +106,15 @@
 
     <!-- About -->
 
-    <section class="w-full   bg-thernary   py-20 " id="about">
+    <section class="w-full   bg-thernary   py-20 " id="about" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold ">About <span class="text-primary">Me</span></h2>
             <div class="md:grid   md:grid-cols-2 pt-20">
                 <div class="w-full p-2">
                     <div
-                        class="w-full md:w-5/6   h-120 md: rounded-2xl  overflow-hidden rounded-xl [box-shadow:0_0_30px_hsla(195,100%,50%,0.5)]     shadow-primary">
-                        <img src="image/Ibraheem2.png" alt="Ibraheem's Image" class="w-full h-full   ">
+                        class="w-full md:w-5/6   h-120  overflow-hidden rounded-xl [box-shadow:0_0_30px_hsla(195,100%,50%,0.5)]     shadow-primary">
+                        <img src="image/Ibraheem2.png" alt="Portrait of Ibraheem Sultan Front-End Developer"
+                            class="w-full h-full   ">
                     </div>
                 </div>
                 <div class="content  flex flex-col justify-between gap-4 md:h-120  pt-20 md:pt-0">
@@ -163,7 +165,7 @@
 
     <!-- Skills -->
 
-    <section class="w-full  py-20" id="skils">
+    <section class="w-full  py-20" id="skils" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Skills</span></h2>
             <!-- container -->
@@ -280,10 +282,10 @@
         </div>
     </section>
 
-    <!-- Eduction -->
-    <section class="w-full bg-thernary py-20" id="eduction">
+    <!-- Education -->
+    <section class="w-full bg-thernary py-20" id="eduction" data-aos="fade-up">
         <div class="container">
-            <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Eduction</span></h2>
+            <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Education</span></h2>
             <div class="flex flex-col gap-10 mt-20 w-full relative ">
                 <div
                     class="bg-secondery p-4 rounded-xl flex flex-col justify-between w-[95%] ml-auto md:ml-0 md:w-[46%]">
@@ -311,7 +313,7 @@
     </section>
 
     <!-- Work Experience  -->
-    <section class="w-full  py-20" id="experience">
+    <section class="w-full  py-20" id="experience" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold   ">Work <span class="text-primary">Experience</span></h2>
             <div class=" mt-20 flex flex-col gap-10">
@@ -372,7 +374,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="w-full bg-thernary py-20" id="projects">
+    <section class="w-full bg-thernary py-20" id="projects" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Projects</span></h2>
 
@@ -388,7 +390,7 @@
                         <div
                             class="absolute top-0 left-0 w-full h-full bg-[hsla(195,100%,50%,0.3)]   opacity-0   group-hover:block group-hover:opacity-100 transition-all ease-linear  duration-700 ">
                             <a href="https://ibraheemsultan.github.io/TechLane/Index/Home.html"
-                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-[45%] left-[35%] duration-700 ">
+                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  duration-700 ">
                                 View Project </a>
                         </div>
                     </div>
@@ -430,7 +432,7 @@
                         <div
                             class="absolute top-0 left-0 w-full h-full bg-[hsla(195,100%,50%,0.3)]   opacity-0   group-hover:block group-hover:opacity-100 transition-all ease-linear  duration-700 ">
                             <a href="https://assuitstay.runasp.net/"
-                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-[45%] left-[35%] duration-700 ">
+                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-700 ">
                                 View Project </a>
                         </div>
                     </div>
@@ -472,7 +474,7 @@
                         <div
                             class="absolute top-0 left-0 w-full h-full bg-[hsla(195,100%,50%,0.3)]   opacity-0   group-hover:block group-hover:opacity-100 transition-all ease-linear  duration-700 ">
                             <a href="https://assuitstay.runasp.net/"
-                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-[45%] left-[35%] duration-700 ">
+                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 duration-700 ">
                                 View Project </a>
                         </div>
                     </div>
@@ -511,14 +513,15 @@
     </section>
 
     <!-- My Achievements -->
-    <section class="w-full  py-20" id="achievements">
+    <section class="w-full  py-20" id="achievements" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold ">My <span class="text-primary">Achievements</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 text-center">
 
                 <div class="bg-thernary p-6 rounded-xl hover:scale-105 duration-500">
                     <div class="w-full h-40 rounded-xl overflow-hidden relative group ">
-                        <img src="image/NTI.png" class="w-full h-full " alt="">
+                        <img src="image/NTI.png"
+                            class="w-full h-full grayscale hover:grayscale-0 transition duration-500" alt="">
                     </div>
                     <h3 class=" text-xl font-semibold pt-3">NTI Web Development Track</h3>
                     <p class="text-gray-300 pt-3">Achieved a final score of 99.5% and gained hands-on experience in
@@ -526,7 +529,8 @@
                 </div>
                 <div class="bg-thernary p-6 rounded-xl hover:scale-105 duration-500">
                     <div class="w-full h-40 rounded-xl overflow-hidden relative group ">
-                        <img src="image/DEPI.png" class="w-full h-full " alt="">
+                        <img src="image/DEPI.png"
+                            class="w-full h-full grayscale hover:grayscale-0 transition duration-500" alt="">
                     </div>
                     <h3 class=" text-xl font-semibold pt-3">Digital Egypt Pioneers Initiative</h3>
                     <p class="text-gray-300 pt-3">Completed a professional training program covering both frontend and
@@ -534,7 +538,8 @@
                 </div>
                 <div class="bg-thernary p-6 rounded-xl hover:scale-105 duration-500">
                     <div class="w-full h-40 rounded-xl overflow-hidden relative group ">
-                        <img src="image/CCNA.png" class="w-full h-full " alt="">
+                        <img src="image/CCNA.png"
+                            class="w-full h-full grayscale hover:grayscale-0 transition duration-500" alt="">
                     </div>
                     <h3 class=" text-xl font-semibold pt-3">CCNA</h3>
                     <p class="text-gray-300 pt-3"> Learned core networking concepts including IP addressing, subnetting,
@@ -545,7 +550,7 @@
     </section>
 
     <!-- Client Testimonials -->
-    <section class="w-full bg-thernary py-20" id="testimonials">
+    <section class="w-full bg-thernary py-20" id="testimonials" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold   ">Client <span class="text-primary">Testimonials</span></h2>
             <div class="flex justify-center items-center pt-20">
@@ -570,7 +575,7 @@
     </section>
 
     <!-- My Services -->
-    <section class="w-full  py-20" id="services">
+    <section class="w-full  py-20" id="services" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Services</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  mt-20 ">
@@ -614,33 +619,37 @@
 
     <!-- Contact -->
 
-    <section class="w-full bg-thernary py-20" id="contact">
+    <section class="w-full bg-thernary py-20" id="contact" data-aos="fade-up">
         <div class="container">
             <h2 class="text-center text-5xl font-bold ">Get In <span class="text-primary">Touch</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10  ">
                 <div>
-                    <form  >
+                    <form id="contact-form">
                         <div class="md:flex gap-4 ">
                             <div class="flex flex-col gap-2 w-full md:w-1/2 ">
                                 <label class=" text-xl" for="name">Name</label>
-                                <input type="text" id="name"
-                                    class="bg-secondery-over rounded-xl  p-3 required   outline-none  focus:border-1 focus:border-primary  ">
+                                <input type="text" id="name" name="from_name"
+                                    class="bg-secondery-over rounded-xl  p-3   re  outline-none  focus:border-1 focus:border-primary  "
+                                    required>
                             </div>
                             <div class="flex flex-col gap-2 w-full md:w-1/2 pt-4 md:pt-0 ">
                                 <label class=" text-xl" for="email">Email</label>
-                                <input type="email" id="email"
-                                    class="bg-secondery-over rounded-xl  p-3 required outline-none  focus:border-1 focus:border-primary ">
+                                <input type="email" id="email" name="reply_to"
+                                    class="bg-secondery-over rounded-xl  p-3 required outline-none  focus:border-1 focus:border-primary "
+                                    required>
                             </div>
                         </div>
                         <div class="flex flex-col gap-2 w-full pt-4 ">
                             <label class=" text-xl" for="subject">Subject</label>
-                            <input type="text" id="subject"
-                                class="bg-secondery-over rounded-xl  p-3  outline-none  focus:border-1 focus:border-primary ">
+                            <input type="text" id="subject" name="subject"
+                                class="bg-secondery-over rounded-xl  p-3  outline-none  focus:border-1 focus:border-primary "
+                                required>
                         </div>
                         <div class="flex flex-col gap-2 w-full pt-4 ">
                             <label class=" text-xl" for="message">Message</label>
-                            <textarea name="message" id="message"
-                                class="bg-secondery-over h-50 rounded-xl p-2 outline-none  focus:border-1 focus:border-primary"></textarea>
+                            <textarea name="message" id="message" name="message"
+                                class="bg-secondery-over h-50 rounded-xl p-2 outline-none  focus:border-1 focus:border-primary"
+                                required></textarea>
                         </div>
 
                         <input type="submit" value="Send Message"
@@ -692,8 +701,9 @@
                         <h4>Follow Me</h4>
                         <div class="contact flex gap-4 ">
                             <a href="https://github.com/IbraheemSultan">
-                                <ix 
-                                    class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-github"></i>
+                                <ix
+                                    class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-github">
+                                    </i>
                             </a>
                             <a href="https://www.linkedin.com/in/ibraheem-mohammed-el-sultan/">
                                 <i
@@ -720,17 +730,45 @@
         <div class="container flex  items-center justify-between ">
             <p class="text-gray-500">© 2025 Ibraheem Sultan. All rights reserved.</p>
             <div class="flex justify-center gap-4 pt-4">
-                <a href="https://github.com/IbraheemSultan" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/ibraheem-mohammed-el-sultan/" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-linkedin"></i></a>
-                <a href="whatsapp://send?phone=+201141685814" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://github.com/IbraheemSultan" class="text-xl hover:text-primary text-gray-500"><i
+                        class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/ibraheem-mohammed-el-sultan/"
+                    class="text-xl hover:text-primary text-gray-500"><i class="bi bi-linkedin"></i></a>
+                <a href="whatsapp://send?phone=+201141685814" class="text-xl hover:text-primary text-gray-500"><i
+                        class="bi bi-whatsapp"></i></a>
                 <a href="#" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-facebook"></i></a>
             </div>
         </div>
 
     </footer>
 
+    <a href="#hero-section" class="scroll-to-top">
+        <button type="button"
+            class="fixed z-20 bottom-0 rounded-xl cursor-pointer end-0 m-3  text-xl border-0 bg-primary text-white p-3 shadow-lg hover:bg-sky-800 duration-500">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </a>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("4Rg6JJG3ARNokgjCK"); // من EmailJS
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_l19vo8b', 'template_9oht09o', this)
+                .then(() => {
+                    alert('Message sent successfully!');
+                }, (error) => {
+                    alert('Failed to send message: ' + error);
+                });
+        });
+    </script>
 
 </body>
 
