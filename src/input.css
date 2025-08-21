@@ -1,0 +1,21 @@
+@import "tailwindcss"; 
+
+.card {
+    color:hsl(201, 97%, 10%);
+
+}
+@theme{
+    --color-primary : hsl(195,100%,50%);
+    --color-secondery : hsl(215,52%,10%) ;
+    --color-secondery-over : hsl(215,64%,11%) ;
+    --color-thernary : hsl(0,0%,7%);
+}
+
+.icons{
+    @apply text-primary text-3xl;
+}
+
+.container{
+    @apply m-auto w-11/12;
+}
+

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body class="bg-secondery text-white font-sans ">
+
+    <!-- header -->
+
+    <header class=" w-full h-20 flex justify-between items-center lg:static lg:z-0 fixed top-0 z-50 bg-secondery-over ">
+        <!-- Logo -->
+
+        <div class="logo flex ml-5">
+            <svg width="200" x="50%" y="50% " text-anchor="middle" dominant-baseline="middle" height="80"
+                viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Icon: Abstract hexagon with S -->
+                <g transform="translate(10,10)" class="hidden ">
+                    <!-- Hexagon -->
+                    <polygon points="20,0 40,10 40,30 20,40 0,30 0,10" fill="hsl(195,100%,50%)" />
+                    <!-- S inside -->
+                    <path d="M8 14 C15 10, 25 10, 32 14
+                            C38 18, 32 22, 26 24
+                            C18 26, 12 28, 8 32
+                            C4 36, 15 38, 24 36" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" />
+                </g>
+
+                <!-- Text -->
+                <text x="40%" y="50% " text-anchor="middle" dominant-baseline="middle"
+                    font-family="Segoe UI, sans-serif" font-size="40" font-weight="bold" fill="hsl(195,100%,50%)">
+                    Sultan<tspan fill="white">Stack</tspan>
+                </text>
+            </svg>
+            <span class="bg-primary w-2 h-2 rounded-full absolute left-45 top-10 animate-pulse"></span>
+        </div>
+        <!-- Navigation -->
+
+        <nav class="pt-0 flex items-center group hover:flex-col  ">
+            <!-- Hamburger Icon -->
+
+            <input type="checkbox" class="peer hidden" id="menu-toggle">
+            <label for="menu-toggle" class="cursor-pointer lg:hidden flex items-center justify-center">
+                <i class=" bi bi-list me-4 text-3xl cursor-pointer  "></i>
+            </label>
+
+            <!-- Navigation Links -->
+            <ul
+                class="font-semibold hidden lg:flex lg:items-center left-0  gap-4 peer-checked:flex peer-checked:absolute peer-checked:flex-col peer-checked:bg-secondery-over peer-checked:w-full  top-19  py-7 lg:pe-5">
+
+                <li class="mx-2 duration-500 hover:text-primary"><a href="#about">About</a></li>
+                <li class="mx-2 duration-500 hover:text-primary"><a href="#skils">Skills</a></li>
+                <li class="mx-2 duration-500 hover:text-primary"><a href="#eduction">Eduction</a></li>
+                <li class="mx-2 duration-500 hover:text-primary"><a href="#experience">Experience</a></li>
+                <li class="mx-2 duration-500 hover:text-primary"><a href="#projects">Projects</a></li>
+                <li class="mx-2 duration-500 hover:text-primary"><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="w-full ">
+        <div
+            class="container flex flex-col md:flex-row lg:h-[calc(100vh-80px)]  py-20 lg:py-0  items-center justify-center">
+            <div class=" flex  flex-col gap-7 lg:w-1/2 w-full text-center md:text-start items-center md:items-start   ">
+
+                <h1 class="font-bold text-6xl ">Hello, I'm <br><span class="text-primary"> Ibraheem Sultan</span> </h1>
+                <h2 class=" text-xl lg:text-3xl">Front-End Developer with Full-Stack Skills</h2>
+                <div class="mt-5 flex flex-col w-full  md:flex-row   gap-4">
+                    <a href="#"
+                        class="bg-primary duration-500 border-0 rounded-sm text-xl w-full md:w-fit  py-3 px-6  md:m-0 hover:bg-sky-800">Hire
+                        Me
+                    </a>
+                    <a href="#projects"
+                        class="hover:bg-primary duration-500 border-1 border-primary text-primary hover:text-white rounded-sm text-xl w-full md:w-fit  py-3 px-6 ">View
+                        My Work </a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 items-center md:justify-end justify-center mt-20 lg:m-0  flex">
+                <div
+                    class="w-80 h-80 rounde-lg  bg-[url(/image/bg.jpg)] bg-no-repeat   bg-cover    rounded-xl [box-shadow:0_0_30px_hsla(195,100%,50%,0.5)] shadow-primary md:rotate-3">
+                    <img src="image/ibraheem.png" alt="Ibraheem's Image"
+                        class="w-full h-full object-cover object-top  rounded-lg">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- About -->
+
+    <section class="w-full   bg-thernary   py-20 " id="about">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold ">About <span class="text-primary">Me</span></h2>
+            <div class="md:grid   md:grid-cols-2 pt-20">
+                <div class="w-full p-2">
+                    <div
+                        class="w-full md:w-5/6   h-120 md: rounded-2xl  overflow-hidden rounded-xl [box-shadow:0_0_30px_hsla(195,100%,50%,0.5)]     shadow-primary">
+                        <img src="image/Ibraheem2.png" alt="Ibraheem's Image" class="w-full h-full   ">
+                    </div>
+                </div>
+                <div class="content  flex flex-col justify-between gap-4 md:h-120  pt-20 md:pt-0">
+                    <h3 class="text-2xl font-semibold"> Front-End Developer With Full-Stack Skills </h3>
+                    <p class="  ">I'm a passionate front-end developer with experience in creating responsive,
+                        user-friendly
+                        web applications. With a strong foundation in JavaScript and modern frameworks, I specialize in
+                        building intuitive user interfaces that deliver exceptional experiences.</p>
+                    <p class="  ">My full-stack capabilities allow me to develop end-to-end solutions, from
+                        concept to deployment. I'm dedicated to clean code, performance optimization, and staying
+                        current
+                        with emerging technologies.</p>
+                    <div class="grid  grid-cols-1 md:grid-cols-2 gap-4  ">
+                        <div class=""><i class="bi bi-person-fill text-primary pr-2  "></i><span>Ibraheem
+                                Mohammed</span></div>
+                        <div class=""><i class="bi bi-telephone-fill  text-primary pr-2   "></i><span>+20
+                                1141685814</span></div>
+                        <div class=""><i
+                                class=" text-primary pr-2   bi bi-envelope-fill"></i><span>ibraheemMoSultan@gmail.com</span>
+                        </div>
+                        <div class=""><i class=" text-primary pr-2   bi bi-geo-alt-fill"></i><span> Assuit, Egypt
+                            </span></div>
+                    </div>
+                    <div class="contact flex gap-4 ">
+                        <a href="#">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-github"></i>
+                        </a>
+                        <a href="#">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-facebook"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+
+    <section class="w-full  py-20" id="skils">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Skills</span></h2>
+            <!-- container -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20  pt-20">
+                <!-- Frontend Skills -->
+                <div class="">
+                    <h3 class="text-3xl text-center lg:text-left font-semibold"><i class="fa-solid fa-code icons"></i>
+                        Front-End Skills
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-7 mt-10">
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-brands fa-html5"></i>
+                            <p class="pt-1">HTML5</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-brands fa-css3-alt"></i>
+                            <p class="pt-1">CSS3</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-brands fa-square-js"></i>
+                            <p class="pt-1">JavaScript</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-wind"></i>
+                            <p class="pt-1">Tailwind CSS</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-brands fa-bootstrap"></i>
+                            <p class="pt-1">Bootstrap</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-mobile-screen"></i>
+                            <p class="pt-1">Responsive Design</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-palette"></i>
+                            <p class="pt-1">UI/UX principles</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-universal-access"></i>
+                            <p class="pt-1">Accessibility</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="fas fa-search icons"></i>
+                            <p class="pt-1">SEO Optimization</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="pt-10 md:pt-0 ">
+                    <h3 class="text-3xl text-center lg:text-left font-semibold"><i
+                            class="fa-solid fa-server icons pr-7"></i>Back-End / .NET
+                        Skills
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-7 mt-10">
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons fa-solid fa-hashtag"></i>
+                            <p class="pt-1">C#</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-globe"></i>
+                            <p class="pt-1">ASP .NET MVC </p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-fire"></i>
+                            <p class="pt-1">ASP.NET Core</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  bi bi-database-fill"></i>
+                            <p class="pt-1">Entity Framework</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="fas fa-search icons"></i>
+                            <p class="pt-1">LINQ</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-arrow-right-arrow-left"></i>
+                            <p class="pt-1">REST APIs</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons  fa-solid fa-server"></i>
+                            <p class="pt-1">SQL Server</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons fa-solid fa-shield-halved"></i>
+                            <p class="pt-1">Authentication</p>
+                        </div>
+                        <div
+                            class="flex flex-col p-6 bg-thernary rounded-xl  hover:scale-110 duration-500 justify-center items-center">
+                            <i class="icons fa-solid fa-rocket "></i>
+                            <p class="pt-1">Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eduction -->
+    <section class="w-full bg-thernary py-20" id="eduction">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Eduction</span></h2>
+            <div class="flex flex-col gap-10 mt-20 w-full relative ">
+                <div
+                    class="bg-secondery p-4 rounded-xl flex flex-col justify-between w-[95%] ml-auto md:ml-0 md:w-[46%]">
+                    <h3 class="text-primary font-semibold text-xl">Bachelor of Information Technology </h3>
+                    <h4 class=" text-gray-400">Egyption E-Learning University</h4>
+                    <p class="text-gray-600 py-2 ">oct 2023 - Present</p>
+                    <p class="">Comprehensive computer science education with focus on software engineering, algorithms,
+                        and
+                        system design.</p>
+                </div>
+                <div class=" absolute w-[2px] h-full bg-primary left-0 md:left-[50%] top-0 ">
+                    <div class="w-4 h-4 rounded-full bg-primary absolute -left-1.5 top-[5%]"></div>
+                    <div class="w-4 h-4 rounded-full bg-primary absolute -left-1.5 top-[60%]"></div>
+                </div>
+
+                <div class="bg-secondery p-4 rounded-xl flex flex-col justify-between  w-[95%] md:w-[46%]  ml-auto ">
+                    <h3 class="text-primary font-semibold text-xl ">Full Stack.net Internship </h3>
+                    <h4 class=" text-gray-400 ">Digital Egypt Pioneers Initiative</h4>
+                    <p class="text-gray-600 py-2 "> oct 2024 - may 2025</p>
+                    <p>Full-stack developer skilled in ASP.NET Core, C#, Entity Framework, SQL Server, HTML, CSS, and
+                        JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience  -->
+    <section class="w-full  py-20" id="experience">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold   ">Work <span class="text-primary">Experience</span></h2>
+            <div class=" mt-20 flex flex-col gap-10">
+
+                <div class="bg-thernary  p-10 rounded-xl hover:scale-105 duration-500">
+                    <div class="flex flex-col md:flex-row justify-between  ">
+                        <h3 class="text-primary  text-2xl font-semibold ">Front-End Developer </h3>
+                        <span class="text-gray-400 mr-5 pt-1 ">Jul 2025 - Present </span>
+                    </div>
+
+                    <h4 class="pt-4">Assuit Stay - Freelancer</h4>
+                    <P class="text-gray-400 pt-1">Assuit, Egypt</P>
+                    <ul class="list-disc pl-5 pt-4 flex gap-2 flex-col">
+                        <li>Developed and deployed a web application using ASP.NET MVC.</li>
+                        <li>Implemented responsive frontend interfaces with HTML, CSS, JS and Bootstrap.</li>
+                        <li>Optimized the website for SEO, ensuring visibility on Google Search.</li>
+                        <li>Configured OG tags and submitted the sitemap to major search engines.</li>
+                    </ul>
+
+                </div>
+
+                <div class="bg-thernary  p-10 rounded-xl hover:scale-105 duration-500">
+                    <div class="flex flex-col md:flex-row justify-between  ">
+                        <h3 class="text-primary  text-2xl font-semibold "> Web Developer Intern </h3>
+                        <span class="text-gray-400 mr-5 pt-1 ">Jun 2025 - Jul 2025 </span>
+                    </div>
+
+                    <h4 class="pt-4">NTI - online</h4>
+                    <P class="text-gray-400 pt-1">Assuit, Egypt</P>
+                    <ul class="list-disc pl-5 pt-4 flex gap-2 flex-col">
+                        <li>enrolled in the Web Development Track under the Future Work is Digital initiative by NTI and
+                            MCIT, Egypt.</li>
+                        <li>Gaining strong foundations in HTML, CSS, and JavaScript for front-end development.</li>
+                        <li>Learning responsive design principles, UI/UX fundamentals, and best practices.</li>
+                        <li>Working on real-world tasks and guided projects to build practical experience.</li>
+                    </ul>
+
+                </div>
+
+                <div class="bg-thernary  p-10 rounded-xl hover:scale-105 duration-500">
+                    <div class="flex flex-col md:flex-row justify-between  ">
+                        <h3 class="text-primary  text-2xl font-semibold ">Mentor ICPC </h3>
+                        <span class="text-gray-400 mr-5 pt-1 ">Oct 2024 - Present </span>
+                    </div>
+                    <h4 class="pt-4">ICPC EELU - Volunteering</h4>
+                    <P class="text-gray-400 pt-1">Assuit, Egypt</P>
+                    <ul class="list-disc pl-5 pt-4 flex gap-2 flex-col">
+                        <li>Served as a mentor in the ICPC EELU, providing guidance in competitive programming.</li>
+                        <li>Supported teams in developing advanced problem-solving and algorithmic skills.</li>
+                        <li>Advised on coding efficiency, contest preparation, and strategy refinement.</li>
+                        <li>Fostered teamwork, analytical thinking, and performance under pressure.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="w-full bg-thernary py-20" id="projects">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Projects</span></h2>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 ">
+
+                <!--  Project 1 -->
+
+                <div class="bg-secondery flex flex-col justify-between hover:scale-105 duration-500 ">
+
+                    <div class="w-full h-60 rounded-t-xl overflow-hidden relative group ">
+                        <img src="image/Techlane.png" class="w-full h-full " alt="">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-[hsla(195,100%,50%,0.3)]   opacity-0   group-hover:block group-hover:opacity-100 transition-all ease-linear  duration-700 ">
+                            <a href="https://ibraheemsultan.github.io/TechLane/Index/Home.html"
+                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-[45%] left-[35%] duration-700 ">
+                                View Project </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4  ">
+                        <h3 class="font-bold text-xl">TechLane – E-Commerce Platform</h3>
+                        <p class="text-gray-200 py-4">A complete online shopping solution featuring a dynamic product
+                            catalog,
+                            secure checkout, and an
+                            admin dashboard for sales insights, built with HTML, CSS, and JavaScript.</p>
+                        <div>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">HTML</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">CSS</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">JS</span>
+                        </div>
+
+                    </div>
+
+                    <div class="contact flex gap-4  ml-4 pb-4">
+                        <a href="https://github.com/IbraheemSultan/TechLane">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:text-primary bg-secondery rounded-full bi bi-github"></i>
+                        </a>
+
+                        <a href="https://ibraheemsultan.github.io/TechLane/Index/Home.html">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:text-primary bg-secondery rounded-full bi bi-eye-fill"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+
+                <div class="bg-secondery-over  flex flex-col justify-between  hover:scale-105 duration-500">
+                    <div class="w-full h-60 rounded-t-xl overflow-hidden relative group">
+                        <img src="image/Assiut.png" class="w-full h-full " alt="">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-[hsla(195,100%,50%,0.3)]   opacity-0   group-hover:block group-hover:opacity-100 transition-all ease-linear  duration-700 ">
+                            <a href="https://assuitstay.runasp.net/"
+                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-[45%] left-[35%] duration-700 ">
+                                View Project </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4 pt-10 ">
+                        <h3 class="font-bold text-xl">Assuit Stay</h3>
+                        <p class="text-gray-200 py-4">sakanat is a web application for managing and listing apartments,
+                            built with ASP.NET Core MVC and Entity Framework.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">HTML</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">CSS</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">JS</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">Bootstrap</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">MVC</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">C#</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">SQL</span>
+                        </div>
+                    </div>
+                    <div class="contact flex gap-4  ml-4 pb-4">
+                        <a href="#">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:text-primary bg-secondery rounded-full bi bi-github"></i>
+                        </a>
+
+                        <a href="https://assuitstay.runasp.net/">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:text-primary bg-secondery rounded-full bi bi-eye-fill"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+
+                <div class="bg-secondery-over  flex flex-col justify-between  hover:scale-105 duration-500">
+                    <div class="w-full h-60 rounded-t-xl overflow-hidden relative group">
+                        <img src="image/company.png" class="w-full h-full " alt="">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-[hsla(195,100%,50%,0.3)]   opacity-0   group-hover:block group-hover:opacity-100 transition-all ease-linear  duration-700 ">
+                            <a href="https://assuitstay.runasp.net/"
+                                class="z-20 px-4 py-2 bg-primary  rounded-sm text-white absolute top-[45%] left-[35%] duration-700 ">
+                                View Project </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4 pt-10 ">
+                        <h3 class="font-bold text-xl">Company</h3>
+                        <p class="text-gray-200 py-4">Company is a modern landing page website built with Bootstrap,
+                            designed to showcase services, portfolio, and contact information in a responsive layout.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">HTML</span>
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">CSS</span>
+
+                            <span class="text-primary bg-thernary px-4 rounded-xl py-1 ">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="contact flex gap-4  ml-4 pb-4">
+                        <a href="https://github.com/IbraheemSultan/NTI/tree/main/Day%2010/Task%20Bootsrap">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:text-primary bg-secondery rounded-full bi bi-github"></i>
+                        </a>
+
+                        <a href="https://ibraheemsultan.github.io/NTI/Day%2010/Task%20Bootsrap/index.html">
+                            <i
+                                class="p-3 text-xl px-4 duration-500 hover:text-primary bg-secondery rounded-full bi bi-eye-fill"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- My Achievements -->
+    <section class="w-full  py-20" id="achievements">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold ">My <span class="text-primary">Achievements</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 text-center">
+
+                <div class="bg-thernary p-6 rounded-xl hover:scale-105 duration-500">
+                    <div class="w-full h-40 rounded-xl overflow-hidden relative group ">
+                        <img src="image/NTI.png" class="w-full h-full " alt="">
+                    </div>
+                    <h3 class=" text-xl font-semibold pt-3">NTI Web Development Track</h3>
+                    <p class="text-gray-300 pt-3">Achieved a final score of 99.5% and gained hands-on experience in
+                        building user-friendly web interfaces.</p>
+                </div>
+                <div class="bg-thernary p-6 rounded-xl hover:scale-105 duration-500">
+                    <div class="w-full h-40 rounded-xl overflow-hidden relative group ">
+                        <img src="image/DEPI.png" class="w-full h-full " alt="">
+                    </div>
+                    <h3 class=" text-xl font-semibold pt-3">Digital Egypt Pioneers Initiative</h3>
+                    <p class="text-gray-300 pt-3">Completed a professional training program covering both frontend and
+                        backend web development using Microsoft technologies.</p>
+                </div>
+                <div class="bg-thernary p-6 rounded-xl hover:scale-105 duration-500">
+                    <div class="w-full h-40 rounded-xl overflow-hidden relative group ">
+                        <img src="image/CCNA.png" class="w-full h-full " alt="">
+                    </div>
+                    <h3 class=" text-xl font-semibold pt-3">CCNA</h3>
+                    <p class="text-gray-300 pt-3"> Learned core networking concepts including IP addressing, subnetting,
+                        routing, and switching fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="w-full bg-thernary py-20" id="testimonials">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold   ">Client <span class="text-primary">Testimonials</span></h2>
+            <div class="flex justify-center items-center pt-20">
+                <div class="w-full md:w-1/2 bg-secondery-over p-10 rounded-xl shadow-lg">
+                    <i class="fa-solid fa-quote-left text-4xl text-primary"></i>
+                    <p class="text-gray-300 pt-4">" I had the pleasure of working with Ibraheem on a recent project, and
+                        I
+                        was thoroughly impressed with his skills and professionalism. He delivered high-quality work on
+                        time and was always open to feedback. I highly recommend him for any web development needs! "
+                    </p>
+                    <div class=" pt-4">
+
+                        <div>
+                            <h4 class="text-xl font-semibold">Mohammed Jama</h4>
+                            <p class="text-gray-400">Founder, Assuit Stay </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- My Services -->
+    <section class="w-full  py-20" id="services">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold   ">My <span class="text-primary">Services</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  mt-20 ">
+
+                <div class="bg-thernary flex flex-col justify-between p-6 rounded-xl hover:scale-105 duration-500">
+                    <i class="fa-solid fa-code text-primary text-4xl"></i>
+                    <h3 class="text-2xl font-semibold pt-3">Web Development</h3>
+                    <p class=" text-gray-300 pt-3">Custom, responsive websites built with modern technologies that look
+                        great on all devices and load quickly.</p>
+                </div>
+
+                <div class="bg-thernary flex flex-col justify-between p-6 rounded-xl hover:scale-105 duration-500">
+                    <i class="fa-solid fa-palette text-primary text-4xl"></i>
+                    <h3 class="text-2xl font-semibold pt-3">UI/UX Design</h3>
+                    <p class=" text-gray-300 pt-3">User-centered design that creates intuitive, engaging interfaces to
+                        enhance user experience and satisfaction.</p>
+                </div>
+
+                <div class="bg-thernary flex flex-col justify-between p-6 rounded-xl hover:scale-105 duration-500">
+                    <i class="fa-solid fa-server text-primary text-4xl"></i>
+                    <h3 class="text-2xl font-semibold pt-3">Full-Stack Development</h3>
+                    <p class=" text-gray-300 pt-3">End-to-end application development from front-end interfaces to
+                        back-end systems and databases.</p>
+                </div>
+
+                <div class="bg-thernary flex flex-col justify-between p-6 rounded-xl hover:scale-105 duration-500">
+                    <i class="fa-solid fa-gauge-high text-primary text-4xl"></i>
+                    <h3 class="text-2xl font-semibold pt-3">Performance Optimization</h3>
+                    <p class=" text-gray-300 pt-3">Speed up your existing websites and applications to improve user
+                        experience and SEO rankings.</p>
+                </div>
+
+                <div class="bg-thernary flex flex-col justify-between p-6 rounded-xl hover:scale-105 duration-500">
+                    <i class="fa-solid fa-chalkboard-user text-primary text-4xl"></i>
+                    <h3 class="text-2xl font-semibold pt-4">Technical Consultation</h3>
+                    <p class=" text-gray-300 pt-4">Expert advice on technology choices, architecture decisions, and best
+                        practices for your projects.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="w-full bg-thernary py-20" id="contact">
+        <div class="container">
+            <h2 class="text-center text-5xl font-bold ">Get In <span class="text-primary">Touch</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10  ">
+                <div>
+                    <form  >
+                        <div class="md:flex gap-4 ">
+                            <div class="flex flex-col gap-2 w-full md:w-1/2 ">
+                                <label class=" text-xl" for="name">Name</label>
+                                <input type="text" id="name"
+                                    class="bg-secondery-over rounded-xl  p-3 required   outline-none  focus:border-1 focus:border-primary  ">
+                            </div>
+                            <div class="flex flex-col gap-2 w-full md:w-1/2 pt-4 md:pt-0 ">
+                                <label class=" text-xl" for="email">Email</label>
+                                <input type="email" id="email"
+                                    class="bg-secondery-over rounded-xl  p-3 required outline-none  focus:border-1 focus:border-primary ">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 w-full pt-4 ">
+                            <label class=" text-xl" for="subject">Subject</label>
+                            <input type="text" id="subject"
+                                class="bg-secondery-over rounded-xl  p-3  outline-none  focus:border-1 focus:border-primary ">
+                        </div>
+                        <div class="flex flex-col gap-2 w-full pt-4 ">
+                            <label class=" text-xl" for="message">Message</label>
+                            <textarea name="message" id="message"
+                                class="bg-secondery-over h-50 rounded-xl p-2 outline-none  focus:border-1 focus:border-primary"></textarea>
+                        </div>
+
+                        <input type="submit" value="Send Message"
+                            class="bg-primary text-white px-6 py-3 rounded-xl mt-7 hover:bg-sky-800 duration-500 cursor-pointer">
+                    </form>
+                </div>
+                <div class="bg-secondery-over p-6 rounded-xl flex flex-col gap-4">
+                    <h3 class="text-3xl font-bold">Contact Information</h3>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <i class="bi bi-geo-alt-fill text-primary text-xl bg-sky-950 px-3 py-2 rounded-full"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xl">Location</h4>
+                            <p class="text-gray-400">Assuit ,Egypt</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <i class="bi bi-envelope-fill text-primary text-xl bg-sky-950 px-3 py-2 rounded-full"></i>
+
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xl">Email</h4>
+                            <p class="text-gray-400"> ibraheem.mo.sultan@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <i class="bi bi-telephone-fill text-primary text-xl bg-sky-950 px-3 py-2 rounded-full"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xl">Phone</h4>
+                            <p class="text-gray-400">+20 1141685814</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <i class="bi bi-clock-fill text-primary text-xl bg-sky-950 px-3 py-2 rounded-full"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-xl">Working Hours </h4>
+                            <p class="text-gray-400">
+                                Monday - Friday: 11am - 11pm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-5 flex flex-col  gap-10">
+                        <h4>Follow Me</h4>
+                        <div class="contact flex gap-4 ">
+                            <a href="https://github.com/IbraheemSultan">
+                                <ix 
+                                    class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ibraheem-mohammed-el-sultan/">
+                                <i
+                                    class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-linkedin"></i>
+                            </a>
+                            <a href="whatsapp://send?phone=+201141685814">
+                                <i
+                                    class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-whatsapp"></i>
+                            </a>
+                            <a href="#">
+                                <i
+                                    class="p-3 text-xl px-4 duration-500 hover:bg-primary bg-secondery rounded-full bi bi-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-secondery py-10">
+        <div class="container flex  items-center justify-between ">
+            <p class="text-gray-500">© 2025 Ibraheem Sultan. All rights reserved.</p>
+            <div class="flex justify-center gap-4 pt-4">
+                <a href="https://github.com/IbraheemSultan" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/ibraheem-mohammed-el-sultan/" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-linkedin"></i></a>
+                <a href="whatsapp://send?phone=+201141685814" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-whatsapp"></i></a>
+                <a href="#" class="text-xl hover:text-primary text-gray-500"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
