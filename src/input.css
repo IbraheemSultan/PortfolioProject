@@ -1,21 +1,40 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
 
 .card {
-    color:hsl(201, 97%, 10%);
+    color: hsl(201, 97%, 10%);
 
 }
-@theme{
-    --color-primary : hsl(195,100%,50%);
-    --color-secondery : hsl(215,52%,10%) ;
-    --color-secondery-over : hsl(215,64%,11%) ;
-    --color-thernary : hsl(0,0%,7%);
+
+@theme {
+    --color-primary: hsl(195, 100%, 50%);
+    --color-secondery: hsl(215, 52%, 10%);
+    --color-secondery-over: hsl(215, 64%, 11%);
+    --color-thernary: hsl(0, 0%, 7%);
 }
 
-.icons{
+.icons {
     @apply text-primary text-3xl;
 }
 
-.container{
+.container {
     @apply m-auto w-11/12;
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important; /* يحافظ على الألوان */
+    print-color-adjust: exact !important;
+    background: #0a0a0a !important; /* نفس لون الخلفية */
+    color: white !important;
+  }
+
+  section {
+    page-break-before: always; /* يبدأ كل سيكشن في صفحة جديدة */
+    padding: 40px 20px !important; /* مسافة عشان العناصر متدخلش */
+  }
+
+  .no-break {
+    page-break-inside: avoid; /* يمنع تقسيم الكارد أو البوكس */
+  }
+
+}
